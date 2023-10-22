@@ -1,0 +1,87 @@
+  <!doctype html>
+
+<html >
+    <head>
+      <style>
+        body{
+          touch-action: manipulation;
+        }
+
+
+      </style>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="icon" type="image/x-icon" href="/channels4_profile.jpg">
+        <script src="https://kit.fontawesome.com/d2a23fcf0d.js" crossorigin="anonymous"></script>
+         
+        <meta charset="utf-8">
+
+        <title>Cps Game</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body draggable="false" class="prevent-select">
+     <a style="  position: fixed;bottom: 0; font-size:5.656876424vw; right: 0;background-color:white; color:black;" title="feedback" href="https://www.youtube.com/post/UgkxOw48GYLkkPBn9NYYox9trofmp6Isnl6l"> <i class="fa-solid fa-comment"></i></a>
+     <br>
+
+     <niv> <a class="niv" href="./index.html"><i class="fa-solid fa-house-chimney"></i> Home</a> <a class="niv" href="./games.html" title="go back"><i class="fa-solid fa-gamepad"></i> Back to Games</a></niv>
+</div>
+ <h2 draggable="false" class="prevent-select">CPS GAME</h2><br><br>
+ <p  draggable="false" class="prevent-select" id="cpsnumber"></p><br>
+ <p id="hiscore" style="font-size:20px"></p>
+<button hidden id="reload"><i class="fa-solid fa-reply"></i> Replay</button>
+<br><img draggable="false" class="prevent-select" id="cps" style="border-color:black;"width="300"height="auto" src="./Solid_white.svg.png" alt="click here">
+<br><div hidden id="hi"><label>time left</label><br><progress id="time" value=0 max="10"></progress></div>
+
+      <br>
+        <script>
+            function goredirectbloxd () {
+            location.href='https://bloxd.io';
+            }
+            var replay = document.getElementById("reload");
+      replay.addEventListener("click",()=>{
+     
+location.reload();
+      });
+        var cps=document.getElementById("cps");
+        var cpsValue = 0;
+       function  timerun (){
+           document.getElementById("time").value=document.getElementById("time").value+1
+   
+       }
+       
+        function cpscaluc () {
+replay.hidden=false
+           cps.hidden=true;
+           document.getElementById("hiscore").hidden=false;
+          if(localStorage.getItem("hisscore")== null){
+       localStorage.setItem("hisscore",cpsValue)
+       }
+           if(localStorage.getItem("hisscore")<cpsValue){
+           localStorage.setItem("hisscore", cpsValue);
+           }
+            document.getElementById("hiscore").innerHTML=localStorage.getItem("hisscore")+" cps is your HiScore";
+          var cpsshow=cpsValue;
+           document.getElementById("cpsnumber").textContent=cpsshow+" CPS";
+document.getElementById("hi").hidden=true;
+        }
+        cps.addEventListener("click",()=>{
+cpsValue+=1
+
+  location.href = "#cps";
+   document.getElementById("cpsnumber").textContent=cpsValue+" CPS";
+document.getElementById("hi").hidden=false
+if (cpsValue==1){
+window.setInterval(timerun,100);}
+window.setTimeout(cpscaluc,1000);
+ }); 
+            cps.addEventListener("contextmenu", e => e.preventDefault());
+     
+     
+        </script>
+        
+    </body>
+
+</html>

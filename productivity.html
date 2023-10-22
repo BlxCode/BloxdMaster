@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html onload="getlog()" lang="en-CA">
+
+<head>
+  <style>input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+</style>
+  <link rel="apple-touch-icon" href="./channels4_pofile">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/channels4_profile.jpg">
+  <script src="https://kit.fontawesome.com/d2a23fcf0d.js" crossorigin="anonymous"></script>
+
+  <meta charset="utf-8">
+
+  <title>Productivity</title>
+
+  <!-- Load external CSS styles -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <form hidden id="formstuffnownowenterpasswordsubmitnowthisisthedivakaformplzsubscribe" name="formid" ><div id="idkpasswordsectionlole">
+<input type="password" minlength="4" title="Enter Password" placeholder="Enter Password" id="passwordenterinput">
+<br><input type="password" minlength="4" title="Enter the same password from the first password text box" placeholder="Confirm Password" id="passwordenterinputconfirmplz">
+<br><input  type="submit" id="passwordsubmitenterinput">
+
+  </div>
+  <div id="passwordenternowplz">
+<input type="password" placeholder="Enter Password" id="passwordenterinputenputstuffidplzdostuffandplzsubscribebplzplzplzplz">
+
+<input  type="submit" id="passwordsubmitenterinputeeee">
+
+
+  </div>
+</form>
+
+
+
+
+  <div hidden id="flipscreen">
+    <span class="fa-stack fa-2x">
+      <i class="fa-solid fa-mobile-screen fa-stack-1x"></i>
+      <i class="fa-solid fa-rotate fa-stack-2x fa-beat-fade" style="color:Tomato"></i>
+
+    </span>
+    <p id="turnscreentext">Turn your screen horizontally</p>
+  </div>
+  <div id="space_if_large_aka_wide_enough_do_yes_if_no_no"> <a hidden style="  position: fixed;bottom: 0; font-size:5.656876424vw; right: 0;background-color:white; color:black;" title="feedback" href="https://www.youtube.com/post/UgkxOw48GYLkkPBn9NYYox9trofmp6Isnl6l"> <i class="fa-solid fa-comment"></i></a>
+    <a hidden href="https://discord.gg/mUw2ejBGQe" style="position:fixed; bottom:0; left:0; color:#5865F2; background-color:white; font-size:100px  " title="join my discord"><i class="fa-brands fa-discord"></i></a>
+    <niv id="nivfull">
+      <div style="display:inline-block;"> <a href="https://youtube.com/@BloxdMaster"><img class="niv" style=" width:40px; border:none; height:40px; padding:0px;" alt="channels4_pofile.jpg" src="channels4_profile.jpg"></a>
+        <a class="niv" href="./index.html"><i class="fa-solid fa-house-chimney"></i> Home</a>
+      </div>
+  
+      <a class="niv" hidden href="./store.html"><i class="fa-solid fa-cart-shopping"></i> Store</a>
+
+      <a class="niv" href="./about.html"><i class="fa-solid fa-address-card"></i> About</a>
+
+      <a title="play some games made by BloxdMaster" class="niv" href="./games.html"><i class="fa-solid fa-gamepad"></i> Games</a>
+      <br hidden id="flipscreene"><a href="./videos.html" class="niv" title="some videos u might enjoy"><i class="fa-brands fa-youtube"></i> Videos</a>
+      <a hidden title="i was bored so i made this thing." class="niv" href="./productivity.html"><i class="fa-solid fa-file"></i> Productivity</a>
+      
+   <a href="./links-in-the-not-so-description.html" class="niv" title="links in the not so description stuff"><i class="fa-solid fa-arrow-up-right-from-square"></i> Links</a>
+    </niv>
+
+    <br><br><br><br><div id="screensizestuffe"><div>
+      
+    <label for="texta">A place to store notes</label> <br>
+    <br><button id="loadsave"><i class="fa-solid fa-download"></i> Load saved notes</button>
+   <br><br> <textarea autofocus style="border-radius:7.5px; resize:none;" id="texta" name="textanots" rows="20" cols="45"></textarea>
+  <br>  <button  id="save"><i class="fa-solid fa-floppy-disk"></i> Save</button><br><br>
+<button onclick="removeitemslol()" id="deleteevverything"><i class="fa-solid fa-trash"></i> Delete saved notes</button>
+  <hr></div>
+  
+  <br><br><section><label for="texttospeach">Speak Text</label><br>
+  <textarea rows="20" cols="45" style="margin-top:5px; padding:5px; font-size;25px; border-radius:5px;"  id="texttospeach" >sub to bloxd master right now or else i  will destroy you in bedwars</textarea><br>
+    <select  id="language">
+      <option  selected value="en">English</option>
+<option value="uk">Ukrainian</option>
+    <option value="es">Spanish</option>
+    <option value="tr">Turkish</option>
+    <option value="fa">Persian</option>
+    <option value="fr">French</option>
+    <option value="de">German</option>
+    <option value="ja">Japanese</option>
+    <option value="vi">Vietnamese</option>
+    <option value="zh-Hans">Chinese (Mandarin)</option>
+    <option value="Pt">Portuguese</option>
+
+
+
+<option value="hi">Hindi</option>
+<option value="pa">Punjabi</option>
+
+    </select><br>
+    <button style="all: revert; margin-top:5px; padding:5px; font-size:25px;border-radius:1000px; cursor:pointer;" id="buttontosubmit" type="submit" class="reset-this">Speak text</button>
+ 
+  <textarea hidden id="textea"></textarea>
+</section>
+<br><hr>
+<section><form id="formtonotallowtoreloadplzplz123456789101112131415161718192021">
+<label>Simple Calculator</label><br>
+<input id="calc1" title="Numbers only" type="tel" onKeyPress="if(this.value.length==5) return false;" maxlength="5" style="width:50px;"pattern="[0-9]*">
+<select id="calcsel">
+  <option value="+"">+</option>
+  <option value="-"">-</option>
+  <option value="*">&#215;</option>
+  <option value="/">&#247;</option>
+
+
+
+</select>
+<input id="calc2" title="Numbers only" type="tel" maxlength="5"  style="width:50px;" pattern="[0-9]*">
+<input id="calcbut" type="submit" style="cursor:pointer; margin-top:5px; padding:5px; font-size:25px; border-radius:10000px;" value="="></form>
+<p id="calcshow"></p>
+<details>
+  <summary style="cursor:pointer;" title="Answer log (will be saving every second)">Answer log</summary>
+  <p style="font-size:12.5px;" id="wefawfae"></p>
+</details><br><br>
+<input id="answerlogwillbegoneifclicked" style="cursor:pointer;" type="button" title="answer log will be gone if click." value="Reset Answer log">
+</section>
+<br><br><br>
+
+ </div></div>
+<i id="iidstuffgoogletranslateallrightsnotreservedwtfamiatalkinggcanyousee" title="translate" style="cursor:pointer;font-size:30px;" class="fa-solid fa-language"></i>
+<div hidden id="google_translate_element"></div>
+<script>
+document.getElementById("iidstuffgoogletranslateallrightsnotreservedwtfamiatalkinggcanyousee").addEventListener("click",()=>{
+ location.href="#google_translate_element";
+ if( document.getElementById("google_translate_element").hidden==false){
+  document.getElementById("google_translate_element").hidden=true
+}else{
+  document.getElementById("google_translate_element").hidden=false
+}
+
+})
+
+</script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+  <i hidden style="font-size:30px; cursor:pointer;" id="translate" title="Translate Page" class="fa-solewid fa-language"></i>
+             <div hidden class="translatec" title="Click to Translate this Page" id="google_translate_element"></div>
+
+
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
+         
+  <script>
+     /* if(window.screenWidth<550) {
+      document.getElementById("if_too_big_noplz").hidden=true;
+      
+      } */
+
+  
+  /*var password_div1 = document.getElementById("idkpasswordsectionlole");
+  var password_div2 = document.getElementById("passwordenternowplz");
+  var enter_password_from_div_1= document.getElementById("passwordenterinput");
+var confirm_password_from_div_1= document.getElementById("passwordenterinputconfirmplz");
+var save_password_from_div_1= document.getElementById("passwordsubmitenterinput");
+var enter_password_from_div_2=document.getElementById("passwordenterinputenputstuffidplzdostuffandplzsubscribebplzplzplzplz")
+var submit_password_from_div_2=document.getElementById("passwordsubmitenterinputeeee");
+
+if(localStorage.getItem("epasswordw")==null||localStorage.getItem("epasswordw")==undefined){
+password_div1.hidden=false;
+password_div2.hidden=true;
+document.getElementById("space_if_large_aka_wide_enough_do_yes_if_no_no").hidden=true;
+}else{
+password_div1.hidden=true
+password_div2.hidden=false;
+document.getElementById("space_if_large_aka_wide_enough_do_yes_if_no_no").hidden=true;
+}
+
+save_password_from_div_1.addEventListener("click",()=>{
+if(enter_password_from_div_1.value==confirm_password_from_div_1.value){
+password_div1.hidden=true;
+password_div2.hidden=true;
+document.getElementById("space_if_large_aka_wide_enough_do_yes_if_no_no").hidden=false;
+localStorage.saveItem("epasswordw",enter_password_from_div_1.value);
+
+}
+
+
+});
+
+document.getElementById("formstuffnownowenterpasswordsubmitnowthisisthedivakaformplzsubscribe").addEventListener("submit",(event)=>{
+  event.preventDefault();
+
+
+});
+
+
+
+
+  */
+  //notes
+
+  document.getElementById("formtonotallowtoreloadplzplz123456789101112131415161718192021").addEventListener("submit",(event)=>{
+  event.preventDefault();
+  
+  });
+  var texta = document.getElementById("texta");
+var textatext = document.getElementById("texta").value;
+function turnbacke(){
+document.getElementById("save").innerHTML='  <i class="fa-solid fa-floppy-disk"></i> Save';
+
+
+
+}
+document.getElementById("save").addEventListener("click",()=>{
+  document.getElementById("save").innerHTML='  <i class="fa-solid fa-spinner fa-spin-pulse"></i> Saving';
+setTimeout(turnbacke,1000);
+
+
+localStorage.removeItem("textae");
+  localStorage.setItem("textae", String(document.getElementById("texta").value));
+
+});
+
+
+document.getElementById("loadsave").addEventListener("click", () => {
+document.getElementById("textea").value=document.getElementById("textea").value+localStorage.getItem("textae");
+texta.value=document.getElementById("textea").value;
+});
+
+
+function removeitemslol () {
+localStorage.removeItem("textae");
+
+}
+
+
+//
+
+
+/*function widthyes() {
+  if (screen.availWidth < 600) {
+    document.getElementById("flipscreen").hidden = false;
+    document.getElementById(
+      "space_if_large_aka_wide_enough_do_yes_if_no_no"
+    ).hidden = true;
+  }
+
+  if (screen.availWidth > 600) {
+    document.getElementById("flipscreen").hidden = true;
+    document.getElementById(
+      "space_if_large_aka_wide_enough_do_yes_if_no_no"
+    ).hidden = false;
+  }
+}
+setInterval(widthyes, 10);
+*/
+//Speak text
+
+
+var tts = document.getElementById("texttospeach");
+var language = document.getElementById("language");
+var bts = document.getElementById("buttontosubmit")
+
+bts.addEventListener("click",()=>{
+
+
+var speakData = new SpeechSynthesisUtterance();
+
+if(bts.textContent=="Speak text"){
+speakData.volume = 1; 
+speakData.rate = 1; 
+speakData.pitch = 0; 
+speakData.text = tts.value;
+speakData.lang = language.value;
+
+bts.textContent="Stop text";
+
+speechSynthesis.speak(speakData);
+
+}else{
+speechSynthesis.cancel(speakData);
+
+bts.textContent="Speak text"
+
+
+}
+
+
+});
+tts.addEventListener("change",()=>{
+
+bts.textContent="Speak text";
+});
+
+
+
+
+
+
+
+
+  var calcvalu;
+var calc1 = document.getElementById("calc1");
+var calcsel=document.getElementById("calcsel");
+var calc2 = document.getElementById("calc2");
+var calcbutton = document.getElementById("calcbut");
+var calcshow = document.getElementById("calcshow");
+calcbutton.addEventListener("click",()=>{
+calcvalu=calcsel.value;
+
+
+
+
+
+if(calcsel.value==="+"){
+var calcwhatval=(Number(calc1.value)+Number(calc2.value)); 
+
+
+calcshow.innerHTML =calcwhatval;
+
+
+
+}
+
+if(calcsel.value==="-"){
+var calcwhatval=(Number(calc1.value)-Number(calc2.value)); 
+
+
+calcshow.innerHTML =calcwhatval;
+
+
+}
+if(calcsel.value==="*"){
+var calcwhatval=Number(calc1.value)*Number(calc2.value); 
+
+
+calcshow.innerHTML =calcwhatval;
+
+
+}
+
+if(calcsel.value==="/"){
+var calcwhatval=Number(calc1.value)/Number(calc2.value); 
+
+
+calcshow.innerHTML =calcwhatval;
+
+
+
+}
+
+const d = new Date();
+ 
+document.getElementById("wefawfae").innerHTML=document.getElementById("wefawfae").innerHTML+"|"+d+" "+calc1.value+calcsel.value+calc2.value+"="+calcwhatval+"| <br>";
+
+localStorage.setItem("wefawfae",document.getElementById("wefawfae").innerHTML);
+});
+
+document.getElementById("answerlogwillbegoneifclicked").addEventListener("click",()=>{
+alert("are you sure you want to reset the answer log? ")
+
+document.getElementById("wefawfae").innerHTML="";
+localStorage.setItem("wefawfae","");
+
+
+});
+
+
+
+calc2.addEventListener("keyup",(event)=>{
+let kaye=event.key
+if(kaye=="Enter"){
+  calcbutton.click();
+}else{
+
+console.log("console.log")
+}
+
+
+});
+//alert("The Answerlog You've saved before "+localStorage.wefawfae);
+function getlog() {
+document.getElementById("wefawfae").innerHTML=String(localStorage.getItem("wefawfae"));
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+getlog();
+
+
+
+
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>

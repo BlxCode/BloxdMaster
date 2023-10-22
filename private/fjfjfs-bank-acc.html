@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    fjfjf'sbc
+  </title>
+  <style>
+body{
+font-size:30px;
+
+}
+button{
+border-radius:10000px;
+}
+select{
+border-radius:10000px;
+width:200px;
+height:50px;
+}
+  </style>
+  <script src="https://kit.fontawesome.com/d2a23fcf0d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <input placeholder="Password plz" maxlength="10" minlength="9" type="password" id="passwordie">
+  <div hidden id="realbody">
+    <h1>
+      fjfjf's Bank Account <i class="fa-solid fa-piggy-bank" style="color: #273d63;"></i>
+    </h1><br>
+    <label>Current Balence:</label><br><button id="plus"><i class="fa-solid fa-plus"></i></button>
+    <p id="be"></p><button id="minus"><i class="fa-solid fa-minus"></i></button>
+    <select id="selection">
+<option value="0" diabled selected>Add or Remove by</option>
+ <option value="0.05">5&cent;</option>
+ <option value="0.1">10&cent;</option>
+ <option value="0.25">25&cent;</option>
+ <option value="1">$1</option>
+ <option value="2">$2</option>
+ <option value="5">$5</option>
+ <option value="10">$10</option>
+ <option value="20">$20</option>
+ <option value="50">$50</option>
+ <option value="100">$100</option>
+
+ 
+ </select>
+  </div>
+  <script>
+    var body=document.getElementById("realbody");
+    var plus=document.getElementById("plus");
+    var minus=document.getElementById("minus");
+    var ps = document.getElementById("passwordie");
+    var bes = localStorage.getItem("le");
+    var fjfjf = document.getElementById("be");
+   var wewill;
+   plus.addEventListener("click",()=>{
+  let val= document.getElementById("selection").value;
+  let thing=Number(localStorage.getItem("le"))+Number(val);
+  fjfjf.textContent="$"+thing;
+   localStorage.setItem("le",thing);
+   });
+   minus.addEventListener("click",()=>{
+  let val= document.getElementById("selection").value;
+  
+ let thing=Number(localStorage.getItem("le"))-Number(val);
+  fjfjf.textContent="$"+thing;
+   localStorage.setItem("le",thing);
+   });
+   if(localStorage.getItem("ban")=="true"){
+   location.href="https://google.com";
+   
+   }
+    if (localStorage.getItem("le")==null){
+    localStorage.setItem("le","0");
+    fjfjf.textContent="$"+localStorage.getItem("le");
+    }else{
+     fjfjf.textContent="$"+localStorage.getItem("le");
+    }
+    ps.addEventListener("keyup",(e)=>{
+    if(e.key=="Enter"){
+    if(ps.value=="1975443336"){
+    body.hidden=false;
+    ps.hidden=true;
+    console.log("acces granted");
+    alert("Acces granted!");
+    }else{
+    alert("Wrong Password");
+wewill+1
+if (wewill === 5) {
+  localStorage.setItem("ban", "true");
+  location.href = "https://google.com";
+}
+
+
+    }
+    }else{
+    console.log("whatever");
+    
+    }
+
+    });
+    
+  </script>
+</body>
+
+</html>
